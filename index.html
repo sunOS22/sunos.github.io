@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta property="og:title" content="sunOS, be free!" />
+    <meta
+      property="og:description"
+      content="sunOS is an environment for locked down Windows and ChromeOS devices."
+    />
+    <meta property="og:image" content="envy.jpg" />
+    <title>sunOS, be free!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <div class="bar">
+      <span
+        style="
+          text-align: left;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          display: flex;
+          height: 45px;
+          gap: 6px;
+          align-items: center;
+        "
+      >
+        <img src="icons/sunOS.png" width="32" height="32" onclick="showBooWindow()" />
+        <input
+          id="searchBox"
+          type="text"
+          name="searchBox"
+          value=""
+          onclick="showotherSearch()"
+          placeholder="Search"
+        />
+          <img src="icons/term.png" height="32" width="32" onclick="showTelegram()" />
+      </span>
+      <span
+        style="
+          text-align: center;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          height: 45px;
+          gap: 6px;
+          align-items: center;
+        "
+
+        
+      >
+
+        <!-- <div id="google_translate_element"></div> -->
+        <h3><div
+          id="clock"
+          style="display: flex; justify-content: center; align-items: center"
+        ></div></h3>
+      </span>
+    </div>
+    <div id="contextMenu" class="context-menu" style="display: none">
+      <a onclick="displaypanel()">Display settings</a>
+      <a onclick="location.reload()">Refresh</a>
+    </div>
+    <div class="hidden">
+      <div id="Teresa">
+        <center>
+          <br />
+          <img src="icons/lock.png" width="32" height="32" onclick="showlock()"/><br>
+          <img src="icons/info.png" onclick="showAboutWindow()" /><br>
+          <img src="icons/discross.png" onclick="showDiscordWindow()" /><br>
+          <img src="icons/shop.png" height="48" width="48" onclick="showstore()" /><br>
+          <img src="icons/wttr.png" onclick="showWeather()" /><br>
+          <img src="icons/Notepad.png" onclick="showNotepad()"/><br>
+          <img
+            src="icons/YT.png" width="48" onclick="showInvidious()"/><br>
+        </center>
+      </div>
+      <div id="teresasearch">
+        <iframe src="https://www.google.com/"></iframe>
+      </div>
+      <div id="teresalock">
+        <style>
+          #teresalock {
+            background-image: url("wp2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+          }
+        </style>
+        <script>
+          function UpdateTime() {
+            let x = new Date();
+            let hours = x.getHours().toString().padStart(2, "0"); // 18
+            let minutes = x.getMinutes().toString().padStart(2, "0"); // 37
+            let timeString = `${hours}:${minutes}`; // example: 18:37
+            let elements = document.querySelectorAll("#time");
+            elements.forEach(function (elm) {
+              if (elm === undefined || elm === null) return;
+              elm.innerText = timeString;
+            });
+          }
+          UpdateTime();
+          setInterval(UpdateTime, 1000); // 60000ms -> 60 sec/1 min delay
+          // Delete lockscreen func.
+
+          function RemoveLockScreen() {
+            let element = document.querySelector(".winbox #teresalock");
+            if (element) element = element.closest(".winbox").remove();
+          }
+        </script>
+
+        <center>
+          <h1 style="font-size: 72px; margin-bottom: 0" id="time">00:00</h1>
+          <!-- 00:00 is fallback time incase it breaks -->
+        </center>
+        <br />
+        <center><img src=icons/lock.png onclick="RemoveLockScreen()"></center>
+      </div>
+      <div id="teresadual">
+        <center>
+          <br />
+          <img src="icons/term.png" onclick="showTelegram()" />
+        </center>
+      </div>
+      <div id="TeresaZwei">
+        <center>
+        <br>
+        <img src="icons\shop.png" height="48" width="48">
+          <h2>Welcome to the App Explorer</h2>
+          <h3>Simple apps</h3>
+          <h4>These apps are very simple.</h4>
+          <button onclick="id2()">Localhost Viewer</button>
+          <button onclick="id1()">Piskel</button>
+          <h3>Gaming</h3>
+          <h4>Relax by playing some games.</h4>
+          <button onclick="id3()">Eaglercraft</button>
+          <button onclick="id4()">Resent Client</button>
+        </center>
+      </div>
+      <div id="TeresaMark">
+        <center>
+          <button onclick="history.back()">&lt;</button>
+          <button onclick="history.forward()">&gt;</button>
+        </center>
+<iframe id="myIframe" src="https://www.google.com/webhp?igu=1"></iframe>
+      </div>
+      <div id="about">
+        <center>
+          <br />
+          <img src="icons/sunOS-text.png" width="256" height="79" /><img />
+          <h1>sunOS development build</h1>
+          <h3>Version 1.0</h3>
+          <script>
+            var OSName = "Unknown OS";
+            if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
+            if (navigator.appVersion.indexOf("Mac") != -1) OSName = "macOS";
+            if (navigator.appVersion.indexOf("X11") != -1) OSName = "Unix";
+            if (navigator.appVersion.indexOf("Linux") != -1)
+              OSName = "GNU/Linux";
+
+            document.write("Host OS: " + OSName);
+          </script>
+          <br /><br />
+
+          <button onclick="showmore()">Advanced information</button><br /><br />
+          <button onclick="showlog()">Credits</button>
+        </center>
+      </div>
+      <div id="more">
+        <center>
+          <br />
+          <h1>Advanced information:</h1>
+          <script>
+            var nVer = navigator.appVersion;
+            var nAgt = navigator.userAgent;
+            var browserName = navigator.appName;
+            var fullVersion = "" + parseFloat(navigator.appVersion);
+            var majorVersion = parseInt(navigator.appVersion, 10);
+            var nameOffset, verOffset, ix;
+
+            // In Opera, the true version is after "OPR" or after "Version"
+            if ((verOffset = nAgt.indexOf("OPR")) != -1) {
+              browserName = "Opera";
+              fullVersion = nAgt.substring(verOffset + 4);
+              if ((verOffset = nAgt.indexOf("Version")) != -1)
+                fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In MS Edge, the true version is after "Edg" in userAgent
+            else if ((verOffset = nAgt.indexOf("Edg")) != -1) {
+              browserName = "Microsoft Edge";
+              fullVersion = nAgt.substring(verOffset + 4);
+            }
+            // In MSIE, the true version is after "MSIE" in userAgent
+            else if ((verOffset = nAgt.indexOf("MSIE")) != -1) {
+              browserName = "Microsoft Internet Explorer";
+              fullVersion = nAgt.substring(verOffset + 5);
+            }
+            // In Chrome, the true version is after "Chrome"
+            else if ((verOffset = nAgt.indexOf("Chrome")) != -1) {
+              browserName = "Chrome";
+              fullVersion = nAgt.substring(verOffset + 7);
+            }
+            // In Safari, the true version is after "Safari" or after "Version"
+            else if ((verOffset = nAgt.indexOf("Safari")) != -1) {
+              browserName = "Safari";
+              fullVersion = nAgt.substring(verOffset + 7);
+              if ((verOffset = nAgt.indexOf("Version")) != -1)
+                fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In Firefox, the true version is after "Firefox"
+            else if ((verOffset = nAgt.indexOf("Firefox")) != -1) {
+              browserName = "Firefox";
+              fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In most other browsers, "name/version" is at the end of userAgent
+            else if (
+              (nameOffset = nAgt.lastIndexOf(" ") + 1) <
+              (verOffset = nAgt.lastIndexOf("/"))
+            ) {
+              browserName = nAgt.substring(nameOffset, verOffset);
+              fullVersion = nAgt.substring(verOffset + 1);
+              if (browserName.toLowerCase() == browserName.toUpperCase()) {
+                browserName = navigator.appName;
+              }
+            }
+            // trim the fullVersion string at semicolon/space if present
+            if ((ix = fullVersion.indexOf(";")) != -1)
+              fullVersion = fullVersion.substring(0, ix);
+            if ((ix = fullVersion.indexOf(" ")) != -1)
+              fullVersion = fullVersion.substring(0, ix);
+
+            majorVersion = parseInt("" + fullVersion, 10);
+            if (isNaN(majorVersion)) {
+              fullVersion = "" + parseFloat(navigator.appVersion);
+              majorVersion = parseInt(navigator.appVersion, 10);
+            }
+
+            document.write(
+              "" +
+                "Browser name  = " +
+                browserName +
+                "<br>" +
+                "Full version  = " +
+                fullVersion +
+                "<br>" +
+                "Major version = " +
+                majorVersion +
+                "<br>" +
+                "User agent = " +
+                navigator.userAgent +
+                "<br>"
+            );
+          </script>
+        </center>
+      </div>
+      <div id="clockapp">
+        <center>
+          <h2>coming soon</h2>
+        </center>
+      </div>
+      <div id="log">
+        <center>
+          <br />
+          <img src="icons/sunOS-text.png" width="256" height="79" /><img />
+          <h1>Credits</h1>
+          <p>
+            <b
+              >This site uses the
+              <a href="http://dsans.davidstudios.uk/">DSans font.</a>
+              <p>This project is nintendowiigi's work that I forked and made better, please do not say that I did not credit him.</p></b
+            >
+          </p>
+        </center>
+      </div>
+      <div id="cc">
+        <center>
+          <br />
+          <h2>Adjust your computer's settings</h2>
+          <img src="icons/display.png" onclick="displaypanel()" />
+          <img src="icons/trans.png" onclick="transpanel()" />
+          <img src="icons/user.png" onclick="userpanel()" />
+        </center>
+      </div>
+      <div id="ccdisplay">
+        <center>
+          <br />
+          <h2>Envy themes</h2>
+          <button onclick="blue()">Blue</button>
+          <button onclick="classic()">Classic</button>
+          <button onclick="purple()">Purple</button>
+          <br />
+          <h2>Custom wallpapers</h2>
+          <button onclick="urlbox()">Type in an image URL</button><br /><br />
+        </center>
+      </div>
+      <div id="urlbox">
+        <center>
+          <br />
+          <h2>Type in your URL</h2>
+          <input type="text" id="newid" />
+          <button onclick="setWallpaper()">Apply</button>
+        </center>
+      </div>
+      <div id="cctrans">
+        <center>
+          <br />
+          <h2>Localisation</h2>
+        </center>
+      </div>
+      <div id="ccuser">
+        <center>
+          <br />
+          <h2>Change or create a user</h2>
+          <button onclick="showerror()">Make a local account</button
+          ><br /><br />
+          <button onclick="showerror()">Use your Zone account</button>
+          <p>Accounts are non-functional as of now.</p>
+        </center>
+      </div>
+      <div id="makeitlocal">
+        <center>
+          <br />
+          <h2>Coming soon</h2>
+        </center>
+      </div>
+      <div id="err">
+        <center>
+          <br />
+          <img src="icons/info.png" width="64" height="64" /><img />
+          <!-- May replace info icon with an error icon/SVG (David)-->
+          <h1>Error</h1>
+          <p>
+            An error happened! A
+            <a href="https://envywebos.github.io" target="">refresh</a> is
+            recommended. This may also be because of a missing feature.
+          </p>
+        </center>
+      </div>
+      <div id="widgallery">
+        <center><img src="boo.png" width="84" height="84" /><img /></center>
+        <p>(testing loading wheel)</p>
+      </div>
+      <div id="loading">
+        <svg
+          viewBox="0 0 16 16"
+          width="29"
+          height="29"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <style>
+            path {
+              animation: spinner 3s ease-in-out infinite;
+              stroke-dasharray: 1, 200;
+              stroke-dashoffset: 0;
+              fill: none;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              stroke-linecap: round;
+              transform-origin: 50% 50%;
+              stroke: #e7e9ec;
+            }
+
+            @keyframes spinner {
+              0% {
+                stroke-dasharray: 0, 200;
+                stroke-dashoffset: 0;
+                transform: rotate(0deg);
+              }
+              100% {
+                stroke-dasharray: 130, 200;
+                stroke-dashoffset: -43.9;
+                transform: rotate(-360deg);
+              }
+            }
+          </style>
+          <path d="M8 1A1 1 0 008 15 1 1 0 008 1"></path>
+        </svg>
+      </div>
+    </div>
+    <script src="winbox.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="storeid.js"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+
+    <script></script>
+  </body>
+</html>

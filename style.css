@@ -1,0 +1,132 @@
+@import url("https://dsans.davidstudios.uk/css2.css");
+
+body {
+  background-image: url("wp.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "DSans Regular", system-ui,
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Vazirmatn', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.wb-body {
+  background-color: #202020;
+}
+.wb-full {
+  display: none;
+  background-color: #202020;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  
+}
+.winbox.eclipsemono {
+  background: #2f2f2f;
+}
+.winbox.eclipselock {
+  background: #000000;
+}
+.winbox.eclipsemono .wb-body {
+  color: #fff;
+  background: #202020;
+}
+.winbox.eclipsemono .wb-title {
+  color: #fff;
+}
+.winbox.eclipsemono .wb-control {
+  filter: invert(0);
+}
+.bar {
+  position: fixed;
+  height: 45px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 1.0;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bar p {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.bar span {
+  margin-right: 10px;
+}
+
+.context-menu {
+  position: fixed;
+  text-align: center;
+  background: #0e0f0f;
+  border: 1px solid black;
+  z-index: 999999;
+}
+
+.context-menu {
+  padding: 0px;
+  margin: 0px;
+  min-width: 150px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.context-menu a {
+  padding-bottom: 7px;
+  padding-top: 7px;
+  border: 1px solid #2f2f2f;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.context-menu a:hover {
+  background-color: #1d1e1f;
+}
+
+button, input {
+  appearance: none;
+  font: inherit;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #1d1e1f;
+  border: 1px solid #2f2f2f;
+  outline: none;
+  cursor: pointer;
+}
+button:hover, input:hover {
+  background-color: #1d1e1f;
+}
+select {
+  font: inherit;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #1d1e1f;
+  border: 1px solid #2f2f2f;
+  outline: none;
+  cursor: pointer;
+
+}
+select:hover {
+  background-color: #1d1e1f;
+}
