@@ -1,4 +1,4 @@
-[![sunOS logo](icons/sunOS-text.png)
+[!sunOS logo](icons/sunOS-text.png)
 [![wakatime](https://wakatime.com/badge/user/018b61ac-2a74-4c0b-ab5a-f4ed369ec8a1/project/018b6b6e-cb61-42e3-993e-27d4bd40fc6a.svg)](https://wakatime.com/badge/user/018b61ac-2a74-4c0b-ab5a-f4ed369ec8a1/project/018b6b6e-cb61-42e3-993e-27d4bd40fc6a)
 
 # sunOS, be free!
