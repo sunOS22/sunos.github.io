@@ -62,3 +62,20 @@ function id4() {
     url: "https://reslauncher.vercel.app/",
   });
 }
+
+function id5() {
+  new WinBox({
+    title: "Google Docs",
+    icon: "icons/docs.png"
+    class: "eclipsemono",
+    x: "center",
+    y: "center",
+    width: "50%",
+    height: "50%",
+    top: 0,
+    right: 0,
+    bottom: 45,
+    left: 0,
+    url: "https://docs.google.com",
+  });
+}

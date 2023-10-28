@@ -52,8 +52,8 @@ function showInvidious() {
     class: "eclipsemono",
     x: "center",
     y: "center",
-    width: "50%",
-    height: "85%",
+    width: "90%",
+    height: "90%",
     top: 0,
     right: 0,
     bottom: 45,
@@ -86,13 +86,13 @@ function showDiscordWindow() {
     class: "eclipsemono",
     x: "center",
     y: "center",
-    width: "50%",
-    height: "50%",
+    width: "100%",
+    height: "100%",
     top: 0,
     right: 0,
     bottom: 45,
     left: 0,
-    url: "https://discross.rc24.xyz",
+    url: "http://discross.rc24.xyz",
   });
 }
 
@@ -119,8 +119,8 @@ function showWeather() {
     class: "eclipsemono",
     x: "center",
     y: "center",
-    width: "20%",
-    height: "20%",
+    width: "100%",
+    height: "100%",
     top: 0,
     right: 0,
     bottom: 45,
@@ -204,71 +204,6 @@ function classic() {
   document.body.style.backgroundImage = 'url("' + "classic.png" + '")';
 }
 
-function showzonelogon() {
-  new WinBox({
-    title: "Sign into Zone",
-    class: ["no-max", "no-min", "no-title", "eclipsemono"],
-    x: "center",
-    y: "center",
-    width: "30%",
-    height: "50%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    url: "https://example.com",
-  });
-}
-
-function shownewsearch() {
-  new WinBox({
-    title: "Search results",
-    class: ["no-max", "no-min", "no-title", "eclipsemono"],
-    x: "left",
-    y: "bottom",
-    width: "50%",
-    height: "50%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    url: "https://example.com",
-  });
-}
-
-function summongamehub() {
-  new WinBox({
-    title: "Gaming",
-    icon: "icons/game.png",
-    class: "eclipsemono",
-    x: "center",
-    y: "center",
-    width: "50%",
-    height: "50%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    url: "apps/gamehub.html",
-  });
-}
-
-function showall() {
-  new WinBox({
-    title: " ",
-    class: ["no-max", "no-title", "eclipsemono"],
-    x: "center",
-    y: "center",
-    width: "30%",
-    height: "20%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    mount: document.getElementById("teresaplus").cloneNode(true),
-  });
-}
-
 function urlbox() {
   new WinBox({
     title: " ",
@@ -276,7 +211,7 @@ function urlbox() {
     x: "center",
     y: "center",
     width: "25%",
-    height: "25%",
+    height: "50%",
     top: 0,
     right: 0,
     bottom: 45,
@@ -285,53 +220,6 @@ function urlbox() {
   });
 }
 
-function imgbox() {
-  new WinBox({
-    title: " ",
-    class: ["no-max", "no-min", "no-title", "eclipsemono"],
-    x: "center",
-    y: "center",
-    width: "25%",
-    height: "25%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    mount: document.getElementById("imgbox").cloneNode(true),
-  });
-}
-
-function community() {
-  new WinBox({
-    title: " ",
-    class: ["no-max", "no-min", "no-title", "eclipsemono"],
-    x: "center",
-    y: "center",
-    width: "25%",
-    height: "25%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    mount: document.getElementById("communitywall").cloneNode(true),
-  });
-}
-
-function showlocallogon() {
-  new WinBox({
-    title: "Create a local account",
-    class: ["no-max", "no-min", "no-title", "eclipsemono"],
-    x: "center",
-    y: "center",
-    width: "30%",
-    height: "50%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    mount: document.getElementById("makeitlocal").cloneNode(true),
-  });
-}
 
 function showClock() {
   new WinBox({
@@ -382,20 +270,19 @@ function showmore() {
   });
 }
 
-function showSettingsWindow() {
+function ccdisplay() {
   new WinBox({
-    title: "Control Panel",
-    icon: "icons/setting.png",
+    title: "Themes",
     class: "eclipsemono",
     x: "center",
     y: "center",
-    width: "50%",
+    width: "25%",
     height: "50%",
     top: 0,
     right: 0,
     bottom: 45,
     left: 0,
-    mount: document.getElementById("cc").cloneNode(true),
+    mount: document.getElementById("ccdisplay").cloneNode(true),
   });
 }
 
@@ -415,54 +302,6 @@ function showAboutWindow() {
   });
 }
 
-function displaypanel() {
-  new WinBox({
-    title: "Display options",
-    class: ["no-max", "no-min", "eclipsemono"],
-    x: "center",
-    y: "center",
-    width: "25%",
-    height: "40%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    mount: document.getElementById("ccdisplay").cloneNode(true),
-  });
-}
-
-function transpanel() {
-  new WinBox({
-    title: "Localisation",
-    class: ["no-max", "no-min", "eclipsemono"],
-    x: "center",
-    y: "center",
-    width: "25%",
-    height: "25%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    mount: document.getElementById("cctrans").cloneNode(true),
-  });
-}
-
-function userpanel() {
-  new WinBox({
-    title: "User options",
-    class: ["no-max", "no-min", "eclipsemono"],
-    x: "center",
-    y: "center",
-    width: "25%",
-    height: "50%",
-    top: 0,
-    right: 0,
-    bottom: 45,
-    left: 0,
-    mount: document.getElementById("ccuser").cloneNode(true),
-  });
-}
-
 function showBooWindow() {
   new WinBox({
     title: " ",
@@ -470,7 +309,7 @@ function showBooWindow() {
     x: "left",
     y: "bottom",
     width: "7%",
-    height: "80%",
+    height: "90%",
     header: 0,
     top: 0,
     right: 0,
@@ -488,7 +327,7 @@ function showstore() {
     x: "center",
     y: "center",
     width: "50%",
-    height: "50%",
+    height: "85%",
     header: 0,
     top: 0,
     right: 0,
@@ -515,6 +354,23 @@ function showmark() {
   });
 }
 
+function ide() {
+  new WinBox({
+    title: "Online IDE",
+    icon: "icons/ide.png",
+    class: ["no-min", "eclipsemono"],
+    x: "center",
+    y: "center",
+    width: "50%",
+    height: "80%",
+    top: 0,
+    right: 0,
+    bottom: 45,
+    left: 0,
+    url: "https://online-ide.com",
+  });
+}
+
 
 function timeUpdate() {
   // 24-hour time example
@@ -528,5 +384,4 @@ function timeUpdate() {
 }
 timeUpdate();
 setInterval(timeUpdate, 1000); // 1000ms -> 1 second delay
-
 // Main window section over

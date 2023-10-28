@@ -69,18 +69,19 @@
       <div id="Teresa">
         <center>
           <br />
-          <img src="icons/lock.png" width="32" height="32" onclick="showlock()"/><br>
+          <img src="icons/lock.png" width="48" height="48" onclick="showlock()"/><br>
           <img src="icons/info.png" onclick="showAboutWindow()" /><br>
           <img src="icons/discross.png" onclick="showDiscordWindow()" /><br>
           <img src="icons/shop.png" height="48" width="48" onclick="showstore()" /><br>
           <img src="icons/wttr.png" onclick="showWeather()" /><br>
           <img src="icons/Notepad.png" onclick="showNotepad()"/><br>
-          <img
-            src="icons/YT.png" width="48" onclick="showInvidious()"/><br>
+          <img src="icons/YT.png" width="48" onclick="showInvidious()"/><br>
+          <img src="icons/wpchange.png" width="48" height="48" onclick="ccdisplay()" /><br>
+          <img src="icons/ide.png" width="48" height="48" onclick="ide()" /><br>
         </center>
       </div>
       <div id="teresasearch">
-        <iframe src="https://www.google.com/"></iframe>
+        <iframe src="https://www.google.com/webhp?igu=1"></iframe>
       </div>
       <div id="teresalock">
         <style>
@@ -146,6 +147,8 @@
           <h4>Relax by playing some games.</h4>
           <button onclick="id3()">Eaglercraft</button>
           <button onclick="id4()">Resent Client</button>
+          <h3>Google apps</h3>
+          <img src="icons/docs.png" width="48" height="48" onclick="id5()"></button>
         </center>
       </div>
       <div id="TeresaMark">
@@ -160,7 +163,7 @@
           <br />
           <img src="icons/sunOS-text.png" width="256" height="79" /><img />
           <h1>sunOS development build</h1>
-          <h3>Version 1.0</h3>
+          <h3>Version 1.1</h3>
           <script>
             var OSName = "Unknown OS";
             if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
@@ -283,19 +286,10 @@
           </p>
         </center>
       </div>
-      <div id="cc">
-        <center>
-          <br />
-          <h2>Adjust your computer's settings</h2>
-          <img src="icons/display.png" onclick="displaypanel()" />
-          <img src="icons/trans.png" onclick="transpanel()" />
-          <img src="icons/user.png" onclick="userpanel()" />
-        </center>
-      </div>
       <div id="ccdisplay">
         <center>
           <br />
-          <h2>Envy themes</h2>
+          <h2>sunOS themes</h2>
           <button onclick="blue()">Blue</button>
           <button onclick="classic()">Classic</button>
           <button onclick="purple()">Purple</button>
@@ -311,45 +305,6 @@
           <input type="text" id="newid" />
           <button onclick="setWallpaper()">Apply</button>
         </center>
-      </div>
-      <div id="cctrans">
-        <center>
-          <br />
-          <h2>Localisation</h2>
-        </center>
-      </div>
-      <div id="ccuser">
-        <center>
-          <br />
-          <h2>Change or create a user</h2>
-          <button onclick="showerror()">Make a local account</button
-          ><br /><br />
-          <button onclick="showerror()">Use your Zone account</button>
-          <p>Accounts are non-functional as of now.</p>
-        </center>
-      </div>
-      <div id="makeitlocal">
-        <center>
-          <br />
-          <h2>Coming soon</h2>
-        </center>
-      </div>
-      <div id="err">
-        <center>
-          <br />
-          <img src="icons/info.png" width="64" height="64" /><img />
-          <!-- May replace info icon with an error icon/SVG (David)-->
-          <h1>Error</h1>
-          <p>
-            An error happened! A
-            <a href="https://envywebos.github.io" target="">refresh</a> is
-            recommended. This may also be because of a missing feature.
-          </p>
-        </center>
-      </div>
-      <div id="widgallery">
-        <center><img src="boo.png" width="84" height="84" /><img /></center>
-        <p>(testing loading wheel)</p>
       </div>
       <div id="loading">
         <svg
