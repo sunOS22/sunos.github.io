@@ -1,5 +1,8 @@
 // todo
 // none atm
+window.onload = showDiv();
+
+
 if (/Mobi/.test(navigator.userAgent) === true)
   location.replace("mobile/index.html");
 
@@ -98,7 +101,7 @@ function showDiscordWindow() {
 
 function showotherSearch() {
   new WinBox({
-    title: "Envy search",
+    title: "sunOS search",
     class: ["no-min", "no-max", "no-title", "eclipsemono"],
     x: "left",
     y: "bottom",
@@ -371,7 +374,6 @@ function ide() {
   });
 }
 
-
 function timeUpdate() {
   // 24-hour time example
   let x = new Date();
@@ -384,4 +386,3 @@ function timeUpdate() {
 }
 timeUpdate();
 setInterval(timeUpdate, 1000); // 1000ms -> 1 second delay
-// Main window section over
