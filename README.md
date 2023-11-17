@@ -1,4 +1,5 @@
 [![wakatime](https://wakatime.com/badge/user/018b61ac-2a74-4c0b-ab5a-f4ed369ec8a1/project/018b6b6e-cb61-42e3-993e-27d4bd40fc6a.svg)](https://wakatime.com/badge/user/018b61ac-2a74-4c0b-ab5a-f4ed369ec8a1/project/018b6b6e-cb61-42e3-993e-27d4bd40fc6a)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sunnystew22)](https://github.com/sunOS22/sunOS22.github.io)
 ![sunoslogo](https://github.com/sunOS22/sunos22.github.io/blob/main/icons/sunOS-text.png?raw=true)
 
 # sunOS, be free!
