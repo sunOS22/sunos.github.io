@@ -1,8 +1,6 @@
 [![wakatime](https://wakatime.com/badge/user/018b61ac-2a74-4c0b-ab5a-f4ed369ec8a1/project/018b6b6e-cb61-42e3-993e-27d4bd40fc6a.svg)](https://wakatime.com/badge/user/018b61ac-2a74-4c0b-ab5a-f4ed369ec8a1/project/018b6b6e-cb61-42e3-993e-27d4bd40fc6a)
 ![sunoslogo](https://github.com/sunOS22/sunos22.github.io/blob/main/icons/sunOS-text.png?raw=true)
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sunnystew22&show_icons=true&theme=omni)](https://github.com/sunOS22/sunOS22.github.io)
-
 # sunOS, be free!
 ## sunOS is a web operating system which is made for locked down school/work devices if you want to just have some fun, especially during breaks. With the App Explorer, you can browse applications which are either ports of existing apps or completely new apps made by the community.
 
